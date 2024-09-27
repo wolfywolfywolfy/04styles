@@ -1,0 +1,106 @@
+body {
+    font-family: 'Papyrus', fantasy;
+    background-color: #aac4ac;
+}
+
+
+header {
+    background-color: #c1af9f;
+    text-align: center;
+    height: 50px;
+}
+
+header li {
+
+    color: white;
+    list-style-type: none;
+    float: left;
+    width: 33%;
+    transform: scale(1.1) rotate(0deg) translate(-15px, 0px);
+}
+
+header, main, footer {
+    padding: 3px;
+    border-radius: 2rem 3rem;
+}
+
+.column {
+    background-color: #ffacac;
+    float: left;
+    width: 46.5%;
+    height: 10rem;
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid #000;
+
+    font-size: 1.7rem;
+    font-weight: 900;
+
+    transition: transform 0.5s ease;
+
+    text-align: center;
+}
+
+.quote {
+    background-color: #edf3d5;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 1px 1px rgb(47, 94, 39);
+}
+
+.row {
+    background-color: #d2d2cf;
+    font-size: 1.2rem;
+    padding: 1.1rem;
+}
+
+/* Title for Passage */
+.row:nth-child(even) {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* Content (passage) */
+.row:nth-child(odd) {
+    padding: 0px 100px 50px 100px;
+
+}
+
+/*Pokemon Banner */
+.image {
+    background-color: grey;
+}
+
+.image img {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    filter: blur(3px);
+
+    transition: transform 1s ease;
+}
+.image img:hover {
+    filter: blur(0px);
+}
+.buffer {
+    background-color: lightgrey;
+    color: darkred;
+    font-size: 1.2rem;
+    text-align: center;
+    float: right;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, red, rgb(0, 255, 17));
+}
+
+footer {
+    background-color: #aac4ac;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
